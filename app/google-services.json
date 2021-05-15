@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "660353727318",
+    "project_id": "project-angel-falls",
+    "storage_bucket": "project-angel-falls.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:660353727318:android:cfb5608f75682f7b48b4f7",
+        "android_client_info": {
+          "package_name": "com.example.android.project_angel_falls"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "660353727318-vrrbmt2650pkq3oohb8h7tebqctp0dq4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.project_angel_falls",
+            "certificate_hash": "617c8daf50e1e1d0728287abae7331b2ed27be98"
+          }
+        },
+        {
+          "client_id": "660353727318-mbo380anircmc5kbeimjstea4lochh5i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5HtZKr5w_hbUYiq7-WyZqHHS-i7Osqjk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "660353727318-mbo380anircmc5kbeimjstea4lochh5i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

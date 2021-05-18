@@ -11,12 +11,17 @@ import androidx.navigation.Navigation
 import androidx.navigation.Navigation.findNavController
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.android.project_angel_falls.AffordableCars
+import com.example.android.project_angel_falls.AffordableCarsAdapter
 import com.example.android.project_angel_falls.R
+import com.example.android.project_angel_falls.RecyclerViews.CarSubscription.CarSubscription
+import com.example.android.project_angel_falls.RecyclerViews.CarSubscription.CarSubscriptionAdapter
 import com.example.android.project_angel_falls.databinding.FragmentHomeBinding
 
 
 class homeFragment : Fragment() {
-    val sampleImage = intArrayOf(R.drawable.home_img_1, R.drawable.home_img_2, R.drawable.home_img_3, R.drawable.home_img_4)
+    val sampleImage = intArrayOf(R.drawable.sscar1, R.drawable.sscar2, R.drawable.sscar3, R.drawable.sscar4)
     lateinit var binding: FragmentHomeBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -44,6 +49,19 @@ class homeFragment : Fragment() {
 //            }
 //
 //        }
+
+        val carSubscription = listOf(
+                CarSubscription("0","Sanitised Cars","@₹339/day","Min, 1 month extend anytime", ""),
+                CarSubscription("1","Need a car","for few months","Min, 1 month extend anytime", ""),
+                CarSubscription("2","Sanitised Cars","@₹339/day","Min, 1 month extend anytime", ""),
+                CarSubscription("3","Sanitised Cars","@₹339/day","Min, 1 month extend anytime", ""),
+
+        )
+
+        binding.recyclerViewCarSubscription.layoutManager = LinearLayoutManager(activity,LinearLayoutManager.HORIZONTAL,false)
+        binding.recyclerViewCarSubscription.adapter = CarSubscriptionAdapter(carSubscription)
+        // Inflate the layout for this fragment
+        return binding.root
 
 
 

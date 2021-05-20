@@ -6,29 +6,22 @@
     app:startDestination="@id/homeFragment">
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.android.project_angel_falls.fragments.homeFragment"
+        android:name="com.example.android.project_angel_falls.fragments.RentalsFragment"
         android:label="homeFragment" >
         <action
             android:id="@+id/action_homeFragment_to_buySellFragment"
             app:destination="@id/buySellFragment" />
-        <action
-            android:id="@+id/action_homeFragment_to_exchangeFragment"
-            app:destination="@id/exchangeFragment" />
         <action
             android:id="@+id/action_homeFragment_to_rentFragment"
             app:destination="@id/rentFragment" />
     </fragment>
     <fragment
         android:id="@+id/buySellFragment"
-        android:name="com.example.android.project_angel_falls.fragments.BuySellFragment"
+        android:name="com.example.android.project_angel_falls.fragments.MoreFragment"
         android:label="BuySellFragment" />
     <fragment
-        android:id="@+id/exchangeFragment"
-        android:name="com.example.android.project_angel_falls.fragments.ExchangeFragment"
-        android:label="ExchangeFragment" />
-    <fragment
         android:id="@+id/rentFragment"
-        android:name="com.example.android.project_angel_falls.fragments.RentFragment"
+        android:name="com.example.android.project_angel_falls.fragments.SubscriptionsFragment"
         android:label="fragment_exchange"
         tools:layout="@layout/fragment_exchange" />
 </navigation>

@@ -5,7 +5,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".fragments.RentFragment">
+        tools:context=".fragments.SubscriptionsFragment">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerViewAffordableCars"

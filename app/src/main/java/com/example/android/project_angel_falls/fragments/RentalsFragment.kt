@@ -6,25 +6,18 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentTransaction
-import androidx.navigation.Navigation
-import androidx.navigation.Navigation.findNavController
-import androidx.navigation.findNavController
-import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.android.project_angel_falls.AffordableCars
-import com.example.android.project_angel_falls.AffordableCarsAdapter
 import com.example.android.project_angel_falls.PracticeRecycleView.Practice
 import com.example.android.project_angel_falls.PracticeRecycleView.PracticeAdapter
 import com.example.android.project_angel_falls.R
 import com.example.android.project_angel_falls.RecyclerViews.CarSubscription.CarSubscription
 import com.example.android.project_angel_falls.RecyclerViews.CarSubscription.CarSubscriptionAdapter
-import com.example.android.project_angel_falls.databinding.FragmentHomeBinding
+import com.example.android.project_angel_falls.databinding.FragmentRentalsBinding
 
 
-class homeFragment : Fragment() {
+class RentalsFragment : Fragment() {
     val sampleImage = intArrayOf(R.drawable.sscar1, R.drawable.sscar2, R.drawable.sscar3, R.drawable.sscar4)
-    lateinit var binding: FragmentHomeBinding
+    lateinit var binding: FragmentRentalsBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -33,7 +26,7 @@ class homeFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
-        val binding: FragmentHomeBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_home, container, false)
+        val binding: FragmentRentalsBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_rentals, container, false)
 
         binding.carouselView.pageCount = sampleImage.size
         binding.carouselView.setImageListener { position, imageView ->

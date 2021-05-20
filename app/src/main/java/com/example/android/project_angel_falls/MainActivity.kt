@@ -5,12 +5,10 @@ import android.os.Bundle
 import android.view.WindowManager
 import androidx.databinding.DataBindingUtil
 import com.example.android.project_angel_falls.databinding.ActivityMainBinding
-import com.example.android.project_angel_falls.fragments.BuySellFragment
-import com.example.android.project_angel_falls.fragments.ExchangeFragment
-import com.example.android.project_angel_falls.fragments.RentFragment
+import com.example.android.project_angel_falls.fragments.MoreFragment
+import com.example.android.project_angel_falls.fragments.SubscriptionsFragment
 import com.example.android.project_angel_falls.fragments.adapter.ViewPagerAdapter
-import com.example.android.project_angel_falls.fragments.homeFragment
-import com.google.firebase.auth.FirebaseAuth
+import com.example.android.project_angel_falls.fragments.RentalsFragment
 
 
 @Suppress("DEPRECATION")
@@ -30,17 +28,17 @@ class MainActivity : AppCompatActivity() {
 
     private fun setUpTabs() {
         val adapter = ViewPagerAdapter(supportFragmentManager)
-        adapter.addFragment(homeFragment(), "Home")
-        adapter.addFragment(BuySellFragment(), "Buy/Sell")
-        adapter.addFragment(ExchangeFragment(), "Exchange")
-        adapter.addFragment(RentFragment(), "Rent")
+        adapter.addFragment(RentalsFragment(), "Rentals")
+        adapter.addFragment(SubscriptionsFragment(), "Subscriptions")
+        adapter.addFragment(MoreFragment(), "More")
+
+
         binding.viewPager.adapter = adapter
         binding.tabs.setupWithViewPager(binding.viewPager)
 
         binding.tabs.getTabAt(0)!!.setIcon(R.drawable.home)
         binding.tabs.getTabAt(1)!!.setIcon(R.drawable.buysell)
-        binding.tabs.getTabAt(2)!!.setIcon(R.drawable.exchange)
-        binding.tabs.getTabAt(3)!!.setIcon(R.drawable.rent)
+        binding.tabs.getTabAt(2)!!.setIcon(R.drawable.rent)
 
     }
 

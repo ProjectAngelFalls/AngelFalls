@@ -10,12 +10,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.android.project_angel_falls.AffordableCars
 import com.example.android.project_angel_falls.AffordableCarsAdapter
 import com.example.android.project_angel_falls.R
-import com.example.android.project_angel_falls.databinding.FragmentHomeBinding
-import com.example.android.project_angel_falls.databinding.FragmentRentBinding
+import com.example.android.project_angel_falls.databinding.FragmentSubscriptionsBinding
 
 
-class RentFragment : Fragment() {
-    lateinit var binding: FragmentRentBinding
+class SubscriptionsFragment : Fragment() {
+    lateinit var binding: FragmentSubscriptionsBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
@@ -23,7 +22,7 @@ class RentFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val binding: FragmentRentBinding = DataBindingUtil.inflate(layoutInflater,R.layout.fragment_rent,container,false)
+        val binding: FragmentSubscriptionsBinding = DataBindingUtil.inflate(layoutInflater,R.layout.fragment_subscriptions,container,false)
         val affordableCars = listOf(
             AffordableCars(1,"","6","Tata Safari 1") ,
             AffordableCars(2,"","6","Tata Safari 2") ,

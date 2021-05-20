@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import com.example.android.project_angel_falls.R
 
 
-class ExchangeFragment : Fragment() {
+class MoreFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
@@ -17,7 +17,7 @@ class ExchangeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_rent, container, false)
+        return inflater.inflate(R.layout.fragment_subscriptions, container, false)
     }
 }
 

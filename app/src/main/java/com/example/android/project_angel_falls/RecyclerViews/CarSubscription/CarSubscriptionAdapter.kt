@@ -24,6 +24,7 @@ class CarSubscriptionAdapter(val carSubscription: List<CarSubscription>): Recycl
         holder.view.txtTitle.text = subscription.title
         holder.view.txtSubTitle.text = subscription.subTitle
         holder.view.txtText.text = subscription.text
+        holder.view.imgCarSub.setImageResource(subscription.image)
     }
 
 

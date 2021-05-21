@@ -3,25 +3,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/rentalsFragment">
     <fragment
-        android:id="@+id/homeFragment"
+        android:id="@+id/subscriptionsFragment"
+        android:name="com.example.android.project_angel_falls.fragments.SubscriptionsFragment"
+        android:label="fragment_subscriptions"
+        tools:layout="@layout/fragment_subscriptions" />
+    <fragment
+        android:id="@+id/rentalsFragment"
         android:name="com.example.android.project_angel_falls.fragments.RentalsFragment"
-        android:label="homeFragment" >
+        android:label="fragment_rentals"
+        tools:layout="@layout/fragment_rentals">
         <action
-            android:id="@+id/action_homeFragment_to_buySellFragment"
-            app:destination="@id/buySellFragment" />
+            android:id="@+id/action_rentalsFragment_to_subscriptionsFragment"
+            app:destination="@id/subscriptionsFragment" />
         <action
-            android:id="@+id/action_homeFragment_to_rentFragment"
-            app:destination="@id/rentFragment" />
+            android:id="@+id/action_rentalsFragment_to_moreFragment"
+            app:destination="@id/moreFragment" />
     </fragment>
     <fragment
-        android:id="@+id/buySellFragment"
+        android:id="@+id/moreFragment"
         android:name="com.example.android.project_angel_falls.fragments.MoreFragment"
-        android:label="BuySellFragment" />
-    <fragment
-        android:id="@+id/rentFragment"
-        android:name="com.example.android.project_angel_falls.fragments.SubscriptionsFragment"
-        android:label="fragment_exchange"
-        tools:layout="@layout/fragment_exchange" />
+        android:label="fragment_more"
+        tools:layout="@layout/fragment_more"/>
 </navigation>

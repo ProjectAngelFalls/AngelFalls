@@ -35,7 +35,6 @@ class MainActivity : AppCompatActivity() {
 
         binding.viewPager.adapter = adapter
         binding.tabs.setupWithViewPager(binding.viewPager)
-
         binding.tabs.getTabAt(0)!!.setIcon(R.drawable.home)
         binding.tabs.getTabAt(1)!!.setIcon(R.drawable.buysell)
         binding.tabs.getTabAt(2)!!.setIcon(R.drawable.rent)

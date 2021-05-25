@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+ <FrameLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     tools:context=".Questions">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:backgroundTint="@color/lightgrey"
+       android:text="Is there a Kilometer Limit to how much I can Drive ?"
+       android:id="@+id/btnque1"
+       android:layout_margin="10dp" />
+
+   <TextView
+       android:id="@+id/txtkm"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center_horizontal"
+       android:background="@color/white"
+       android:fontFamily="sans-serif-black"
+       android:text="All the price ranges given in tarrif are for 5km/hr \nfor extra km that you drive , per km extra charge is included too in the tariff"
+       android:textColor="@color/black"
+       android:textSize="18sp"
+       android:visibility="gone" />
+
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:backgroundTint="@color/lightgrey"
+       android:text="In the Event of damage what is maximum liablity?"
+       android:id="@+id/btnque2"
+       android:layout_margin="10dp" />
+
+   <TextView
+       android:id="@+id/txtlia"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center_horizontal"
+       android:background="@color/white"
+       android:text="Maximum Liablity to a Person is of Rs 10000. \nIncluding the repair cost and downtime charges maximum cost is Rs 10000. \n It can also change on the amount of Damage . Sometimes customer will be said to pay full charges"
+       android:textColor="@color/black"
+       android:textSize="18sp"
+       android:visibility="gone"
+       android:fontFamily="sans-serif-black"/>
+
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:backgroundTint="@color/lightgrey"
+       android:text="Who Pays for parking and toll taxes?"
+       android:id="@+id/btnque3"
+       android:layout_margin="10dp" />
+
+   <TextView
+       android:id="@+id/txttoll"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center_horizontal"
+       android:background="@color/white"
+       android:text="Those are to be paid by customer themselves"
+       android:textColor="@color/black"
+       android:textSize="18sp"
+       android:visibility="gone"
+       android:fontFamily="sans-serif-black"/>
+
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:backgroundTint="@color/lightgrey"
+       android:text="What Documents Do i need for using the car?"
+       android:id="@+id/btnque4"
+       android:layout_margin="10dp" />
+
+   <TextView
+       android:id="@+id/txtdoc"
+       android:layout_width="400dp"
+       android:layout_height="107dp"
+       android:layout_gravity="center_horizontal"
+       android:background="@color/white"
+       android:text="ID Proof along with your Driving License"
+       android:textColor="@color/black"
+       android:textSize="18sp"
+       android:visibility="gone"
+       android:fontFamily="sans-serif-black"/>
+
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:backgroundTint="@color/lightgrey"
+       android:text="What to Do if vehicle breaks down or meet with accident?"
+       android:id="@+id/btnque5"
+       android:layout_margin="10dp" />
+
+   <TextView
+       android:id="@+id/txtnot"
+       android:layout_width="400dp"
+       android:layout_height="107dp"
+       android:layout_gravity="center_horizontal"
+       android:background="@color/white"
+       android:text="please notify us we will guide you with further procedure"
+       android:textColor="@color/black"
+       android:textSize="18sp"
+       android:visibility="gone"
+       android:fontFamily="sans-serif-black"/>
+
+
+  </LinearLayout>
+
+
+ </FrameLayout>
+</layout>

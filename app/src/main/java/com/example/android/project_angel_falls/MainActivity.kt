@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.view.WindowManager
 import androidx.databinding.DataBindingUtil
 import com.example.android.project_angel_falls.databinding.ActivityMainBinding
-import com.example.android.project_angel_falls.fragments.MoreFragment
+
 import com.example.android.project_angel_falls.fragments.SubscriptionsFragment
 import com.example.android.project_angel_falls.fragments.adapter.ViewPagerAdapter
 import com.example.android.project_angel_falls.fragments.RentalsFragment

@@ -17,12 +17,6 @@ import com.example.android.project_angel_falls.R
 import com.example.android.project_angel_falls.RecyclerViews.CarSubscription.CarSubscription
 import com.example.android.project_angel_falls.RecyclerViews.CarSubscription.CarSubscriptionAdapter
 import com.example.android.project_angel_falls.databinding.FragmentRentalsBinding
-import com.google.android.gms.common.api.Status
-import com.google.android.libraries.places.api.Places
-import com.google.android.libraries.places.api.model.Place
-import com.google.android.libraries.places.widget.AutocompleteSupportFragment
-import com.google.android.libraries.places.widget.listener.PlaceSelectionListener
-import kotlinx.android.synthetic.main.fragment_rentals.*
 
 
 class RentalsFragment : Fragment() {
@@ -66,32 +60,7 @@ class RentalsFragment : Fragment() {
         binding.recyclerViewCarSubscription.adapter = CarSubscriptionAdapter(carSubscription)
         // Inflate the layout for this fragment
 
-        val apiKey = "AIzaSyDAOM0af4AwLsku0PSByzNI_EF_FeSPtGM"
-        val autocompleteFragment =
-            childFragmentManager.findFragmentById(R.id.autocomplete_fragment)
-                    as AutocompleteSupportFragment
-        // Initialize the SDK
-        context?.let { Places.initialize(it, apiKey) }
 
-        // Create a new PlacesClient instance
-        val placesClient = context?.let { Places.createClient(it) }
-
-
-        // Specify the types of place data to return.
-        autocompleteFragment.setPlaceFields(listOf(Place.Field.ID, Place.Field.NAME))
-
-        // Set up a PlaceSelectionListener to handle the response.
-        autocompleteFragment.setOnPlaceSelectedListener(object : PlaceSelectionListener {
-            override fun onPlaceSelected(place: Place) {
-                // TODO: Get info about the selected place.
-                Log.i(TAG, "Place: ${place.name}, ${place.id}")
-            }
-
-            override fun onError(status: Status) {
-                // TODO: Handle the error.
-                Log.i(TAG, "An error occurred: $status")
-            }
-        })
 
 //
 

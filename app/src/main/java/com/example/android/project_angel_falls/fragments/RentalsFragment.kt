@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.databinding.DataBindingUtil.inflate
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.fragment.app.FragmentManager
@@ -17,6 +18,8 @@ import com.example.android.project_angel_falls.R
 import com.example.android.project_angel_falls.RecyclerViews.CarSubscription.CarSubscription
 import com.example.android.project_angel_falls.RecyclerViews.CarSubscription.CarSubscriptionAdapter
 import com.example.android.project_angel_falls.databinding.FragmentRentalsBinding
+import com.example.happycustomers.Happycust
+import com.example.happycustomers.HappycustAdapter
 
 
 class RentalsFragment : Fragment() {
@@ -31,7 +34,7 @@ class RentalsFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
-        val binding: FragmentRentalsBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_rentals, container, false)
+        val binding: FragmentRentalsBinding = inflate(inflater, R.layout.fragment_rentals, container, false)
 
         binding.carouselView.pageCount = sampleImage.size
         binding.carouselView.setImageListener { position, imageView ->
@@ -48,6 +51,7 @@ class RentalsFragment : Fragment() {
                 CarSubscription(R.drawable.carsubs4, "Need a car", "urgently?", "Doorstep delivery\nin two days"),
 
                 )
+        // defining list for happy customers
 
 
 
@@ -55,6 +59,13 @@ class RentalsFragment : Fragment() {
         binding.recyclerViewCarSubscription.adapter = CarSubscriptionAdapter(carSubscription)
         // Inflate the layout for this fragment
 
+        val man = listOf(
+                Happycust("Nice Experience with this app . on time delivery and pickup","Manav Tanna",R.drawable.ss3,"Student"),
+                Happycust("Well Maintained cars...overall nice experience","Yuvraj Bhadauria",R.drawable.ss1,"Student"),
+                Happycust("I feel safe using personal car subscribed from this app","Tanmay Yadav",R.drawable.ss2,"Student")
+        )
+        binding.recyclerViewHappyCustomers.layoutManager=LinearLayoutManager(activity,LinearLayoutManager.HORIZONTAL,false)
+        binding.recyclerViewHappyCustomers.adapter= HappycustAdapter(man)
         return binding.root
     }
 

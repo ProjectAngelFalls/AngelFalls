@@ -10,8 +10,7 @@
         android:layout_height="match_parent"
         tools:context=".more_screen"
         android:orientation="vertical"
-        android:id="@+id/flMore"
-        android:background="@drawable/home_gradient">
+        android:id="@+id/flMore">
 
         <ScrollView
             android:layout_width="match_parent"

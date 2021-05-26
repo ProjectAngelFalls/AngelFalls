@@ -10,8 +10,7 @@ import android.widget.ImageButton
 import androidx.fragment.app.FragmentManager
 import com.example.android.project_angel_falls.R
 import com.example.android.project_angel_falls.databinding.FragmentMoreScreenBinding
-
-
+import com.example.android.project_angel_falls.fragments.manav.BookingsFragment
 
 
 class more_screen : Fragment() {
@@ -57,14 +56,21 @@ class more_screen : Fragment() {
             }
         }
         val feed = sharefeedback()
-        binding.btnfeed.setOnClickListener{
+        binding.btnfeed.setOnClickListener {
             childFragmentManager.beginTransaction()?.apply {
                 replace(R.id.flMore, feed)
                 addToBackStack(null)
                 commit()
             }
         }
+        val booking = BookingsFragment()
+        binding.btnbook.setOnClickListener {
+            childFragmentManager.beginTransaction()?.apply {
+                replace(R.id.flMore, booking)
+                addToBackStack(null)
+                commit()
+            }
 
 
-    }
-}
+        }
+    }}

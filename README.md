@@ -1,29 +1,30 @@
 Concepts learnt during the project :
-recycler view
-fragments
-firebase
+carousel view </br>
+recycler view </br>
+fragments </br>
+firebase  </br>
 
 
 
-No. of screens = 3
-Description of each screen:
-more screen : Consists of some functions such as 
-manage profile - which consists information about the user
-my bookings- information about booking
-faq - frequently asked questions
-tariff - price range of cars 
-share feedback - to share feedback
-logout- to logout
+No. of screens = 3  </br>
+Description of each screen: </br>
+more screen : Consists of some functions such as  </br> 
+manage profile - yet to be made </br>
+my bookings- yet to be made </br>
+faq - frequently asked questions  </br>
+tariff - price range of cars </br>
+share feedback - to share feedback </br>
+logout- to logout (incomplete)</br>
 
-Home screen : 
-subscriptions- a carousel view 
-happy customers - review from the customers ( actually developers XD)
-
-
+Home screen : </br>
+subscriptions- a carousel view </br>
+happy customers - review from the customers ( actually developers XD)</br>
 
 
 
 
-Functions working currently in the app
-1)booking
-2)viewing prices
+
+
+Functions working currently in the app</br>
+1)booking</br>
+2)viewing prices</br>

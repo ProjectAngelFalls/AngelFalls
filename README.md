@@ -1,4 +1,4 @@
-Concepts learnt during the project :
+Concepts learnt during the project : </br>
 carousel view </br>
 recycler view </br>
 fragments </br>
@@ -26,5 +26,4 @@ happy customers - review from the customers ( actually developers XD)</br>
 
 
 Functions working currently in the app</br>
-1)booking</br>
-2)viewing prices</br>
+viewing prices</br>

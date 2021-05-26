@@ -9,7 +9,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".more_screen"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:id="@+id/flMore"
+        android:background="@drawable/home_gradient">
 
         <ScrollView
             android:layout_width="match_parent"
@@ -21,6 +23,7 @@
                 android:orientation="vertical">
 
                 <LinearLayout
+                    android:visibility="gone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -64,6 +67,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:layout_margin="10dp"
                     android:layout_width="381dp"
                     android:layout_height="74dp"
                     android:layout_gravity="center_horizontal"

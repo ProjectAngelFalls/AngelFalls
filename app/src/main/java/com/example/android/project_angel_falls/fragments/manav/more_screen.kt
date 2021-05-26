@@ -34,24 +34,24 @@ class more_screen : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val prof = manage_profile()
         binding.btnprof.setOnClickListener {
-            childFragmentManager.beginTransaction()?.apply {
-                replace(R.id.viewPager, prof)
+            parentFragmentManager.beginTransaction()?.apply {
+                replace(R.id.flMore, prof)
                 addToBackStack(null)
                 commit()
             }
         }
         val faq = Questions()
         binding.btnfaq.setOnClickListener {
-            childFragmentManager.beginTransaction()?.apply {
-                replace(R.id.viewPager, faq)
+            parentFragmentManager.beginTransaction()?.apply {
+                replace(R.id.flMore, faq)
                 addToBackStack(null)
                 commit()
             }
         }
         val tar = tariff()
         binding.btntarr.setOnClickListener {
-            childFragmentManager.beginTransaction()?.apply {
-                replace(R.id.viewPager, tar)
+            parentFragmentManager.beginTransaction()?.apply {
+                replace(R.id.flMore, tar)
                 addToBackStack(null)
                 commit()
             }
@@ -59,7 +59,7 @@ class more_screen : Fragment() {
         val feed = sharefeedback()
         binding.btnfeed.setOnClickListener{
             childFragmentManager.beginTransaction()?.apply {
-                replace(R.id.viewPager, feed)
+                replace(R.id.flMore, feed)
                 addToBackStack(null)
                 commit()
             }

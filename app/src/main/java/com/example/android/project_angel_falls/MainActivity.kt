@@ -9,6 +9,7 @@ import com.example.android.project_angel_falls.databinding.ActivityMainBinding
 import com.example.android.project_angel_falls.fragments.SubscriptionsFragment
 import com.example.android.project_angel_falls.fragments.adapter.ViewPagerAdapter
 import com.example.android.project_angel_falls.fragments.RentalsFragment
+import com.example.morescreen.more_screen
 
 
 @Suppress("DEPRECATION")
@@ -30,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         val adapter = ViewPagerAdapter(supportFragmentManager)
         adapter.addFragment(RentalsFragment(), "Rentals")
         adapter.addFragment(SubscriptionsFragment(), "Subscriptions")
-        adapter.addFragment(MoreFragment(), "More")
+        adapter.addFragment(more_screen(), "More")
 
 
         binding.viewPager.adapter = adapter

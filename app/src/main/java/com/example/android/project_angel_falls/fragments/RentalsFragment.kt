@@ -48,22 +48,12 @@ class RentalsFragment : Fragment() {
                 CarSubscription(R.drawable.carsubs4, "Need a car", "urgently?", "Doorstep delivery\nin two days"),
 
                 )
-        val practice = listOf(
-                Practice("Yuvraj", "Sexy", R.drawable.carsubs3),
-                Practice("Tanmay", "SuperSexy", R.drawable.carsubs2),
-                Practice("Manav", "UltraSexy", R.drawable.carsubs3)
 
-        )
-   
+
 
         binding.recyclerViewCarSubscription.layoutManager = LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
         binding.recyclerViewCarSubscription.adapter = CarSubscriptionAdapter(carSubscription)
         // Inflate the layout for this fragment
-
-
-
-//
-
 
         return binding.root
     }

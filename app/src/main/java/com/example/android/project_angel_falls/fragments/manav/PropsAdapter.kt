@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.android.project_angel_falls.R
 
 class PropsAdapter(val man: List<Props>): RecyclerView.Adapter<PropsAdapter.propsViewholder> () {
     class propsViewholder(val view: View):RecyclerView.ViewHolder(view)

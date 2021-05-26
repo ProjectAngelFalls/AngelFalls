@@ -1,12 +1,17 @@
 package com.example.morescreen
 
 import android.os.Bundle
+import android.text.TextUtils.replace
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
-import com.example.morescreen.databinding.FragmentMoreScreenBinding
+import androidx.fragment.app.FragmentManager
+import com.example.android.project_angel_falls.R
+import com.example.android.project_angel_falls.databinding.FragmentMoreScreenBinding
+
+
 
 
 class more_screen : Fragment() {
@@ -29,32 +34,32 @@ class more_screen : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val prof = manage_profile()
         binding.btnprof.setOnClickListener {
-            fragmentManager?.beginTransaction()?.apply {
-                replace(R.id.flfragment, prof)
+            childFragmentManager.beginTransaction()?.apply {
+                replace(R.id.viewPager, prof)
                 addToBackStack(null)
                 commit()
             }
         }
         val faq = Questions()
         binding.btnfaq.setOnClickListener {
-            fragmentManager?.beginTransaction()?.apply {
-                replace(R.id.flfragment, faq)
+            childFragmentManager.beginTransaction()?.apply {
+                replace(R.id.viewPager, faq)
                 addToBackStack(null)
                 commit()
             }
         }
         val tar = tariff()
         binding.btntarr.setOnClickListener {
-            fragmentManager?.beginTransaction()?.apply {
-                replace(R.id.flfragment, tar)
+            childFragmentManager.beginTransaction()?.apply {
+                replace(R.id.viewPager, tar)
                 addToBackStack(null)
                 commit()
             }
         }
         val feed = sharefeedback()
         binding.btnfeed.setOnClickListener{
-            fragmentManager?.beginTransaction()?.apply {
-                replace(R.id.flfragment, feed)
+            childFragmentManager.beginTransaction()?.apply {
+                replace(R.id.viewPager, feed)
                 addToBackStack(null)
                 commit()
             }

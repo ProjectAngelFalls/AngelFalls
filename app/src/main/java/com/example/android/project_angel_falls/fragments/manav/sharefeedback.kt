@@ -7,8 +7,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import com.example.morescreen.databinding.FragmentMoreScreenBinding
-import com.example.morescreen.databinding.FragmentSharefeedbackBinding
+import com.example.android.project_angel_falls.R
+import com.example.android.project_angel_falls.databinding.FragmentSharefeedbackBinding
+
 
 
 class sharefeedback : Fragment() {

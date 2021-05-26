@@ -5,8 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.morescreen.databinding.FragmentQuestionsBinding
-import com.example.morescreen.databinding.FragmentSharefeedbackBinding
+import com.example.android.project_angel_falls.R
+import com.example.android.project_angel_falls.databinding.FragmentQuestionsBinding
+
 
 
 class Questions : Fragment() {

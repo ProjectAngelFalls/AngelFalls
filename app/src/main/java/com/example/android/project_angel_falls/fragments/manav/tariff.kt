@@ -7,7 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.morescreen.databinding.FragmentTariffBinding
+import com.example.android.project_angel_falls.R
+import com.example.android.project_angel_falls.databinding.FragmentTariffBinding
+
 
 
 class tariff : Fragment() {
@@ -23,7 +25,7 @@ class tariff : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        val  binding:  FragmentTariffBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_tariff, container, false)
+        val  binding: FragmentTariffBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_tariff, container, false)
         val tariffval = listOf(
             Props("Ford Ecosport", "Rs 74/hr", "Rs 147/hr", "Rs 176/hr","Rs 13/km",R.drawable.sscar1),
             Props("Honda City", "Rs 129/hr", "Rs 181/hr", "Rs 215/hr","Rs 12/km", R.drawable.ss2car),

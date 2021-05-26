@@ -24,7 +24,7 @@
                 <LinearLayout
                     android:visibility="gone"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:orientation="vertical">
 
                     <ImageView
@@ -67,16 +67,16 @@
 
                 <LinearLayout
                     android:layout_margin="10dp"
-                    android:layout_width="381dp"
-                    android:layout_height="74dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:background="@drawable/shapes"
+                    android:background="@drawable/home_gradient"
                     android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="64dp"
                         android:layout_height="58dp"
-                        android:paddingTop="6dp"
+                        android:padding="6dp"
                         android:src="@drawable/ss1m" />
 
                     <TextView
@@ -84,26 +84,20 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal|center_vertical"
                         android:layout_margin="4dp"
-                        android:text=" Revv Cash"
-                        android:textColor="@color/black"
+                        android:text="More"
+                        android:textColor="@color/white"
                         android:textSize="24sp"
+                        android:gravity="center"
                         android:textStyle="bold" />
 
-                    <TextView
-                        android:id="@+id/morers"
-                        android:layout_width="103dp"
-                        android:layout_height="match_parent"
 
-                        android:textColor="@color/black"
-                        android:textSize="24sp"
-                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="14dp"
                     android:layout_margin="10dp"
-                    app:cardBackgroundColor="@color/lightgrey" />
+                    app:cardBackgroundColor="#03A9F4" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -116,24 +110,30 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_weight="2"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/ss2m" />
+                            android:src="@drawable/ss2m"
+                            />
 
                         <TextView
-                            android:layout_width="211dp"
+                            android:layout_width="match_parent"
                             android:layout_height="45dp"
+                            android:layout_weight="1"
                             android:layout_gravity="center_horizontal|center_vertical"
                             android:text="Manage Profile"
                             android:textColor="@color/black"
                             android:textSize="24sp"
-                            android:textStyle="bold" />
+
+                            />
 
                         <ImageButton
                             android:id="@+id/btnprof"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/ss10m" />
+                            android:layout_weight="2"
+                            android:src="@drawable/ss10m"
+                            />
                     </LinearLayout>
 
                     <LinearLayout
@@ -142,23 +142,26 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="90dp"
+                            android:layout_width="match_parent"
+                            android:layout_weight="2"
                             android:layout_height="wrap_content"
                             android:src="@drawable/ss3m" />
 
                         <TextView
-                            android:layout_width="211dp"
+                            android:layout_width="match_parent"
                             android:layout_height="45dp"
+                            android:layout_weight="1"
                             android:layout_gravity="center_horizontal|center_vertical"
                             android:text="My Bookings"
                             android:textColor="@color/black"
                             android:textSize="24sp"
-                            android:textStyle="bold" />
+  />
 
                         <ImageButton
                             android:id="@+id/btnbook"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_weight="2"
                             android:src="@drawable/ss10m" />
                     </LinearLayout>
 
@@ -168,23 +171,26 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_weight="2"
                             android:layout_height="wrap_content"
                             android:src="@drawable/ss4m" />
 
                         <TextView
-                            android:layout_width="200dp"
+                            android:layout_width="match_parent"
                             android:layout_height="45dp"
+                            android:layout_weight="1"
                             android:layout_gravity="center_horizontal|center_vertical"
                             android:text="FAQs"
                             android:textColor="@color/black"
                             android:textSize="24sp"
-                            android:textStyle="bold" />
+  />
 
                         <ImageButton
                             android:id="@+id/btnfaq"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_weight="2"
                             android:src="@drawable/ss10m" />
                     </LinearLayout>
 
@@ -195,23 +201,26 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_weight="2"
                             android:layout_height="wrap_content"
                             android:src="@drawable/ss7m" />
 
                         <TextView
-                            android:layout_width="211dp"
+                            android:layout_width="match_parent"
                             android:layout_height="45dp"
+                            android:layout_weight="1"
                             android:layout_gravity="center_horizontal|center_vertical"
                             android:text="Tarrifs"
                             android:textColor="@color/black"
                             android:textSize="24sp"
-                            android:textStyle="bold" />
+ />
 
                         <ImageButton
                             android:id="@+id/btntarr"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_weight="2"
                             android:src="@drawable/ss10m" />
                     </LinearLayout>
 
@@ -221,22 +230,27 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="86dp"
+                            android:layout_width="match_parent"
+                            android:layout_weight="2"
                             android:layout_height="wrap_content"
                             android:src="@drawable/ss6m" />
 
                         <TextView
-                            android:layout_width="221dp"
-                            android:layout_height="45dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="1"
                             android:layout_gravity="center_horizontal|center_vertical"
                             android:text="Share Feedback"
                             android:textColor="@color/black"
                             android:textSize="24sp"
-                            android:textStyle="bold" />
+/>
 
                         <ImageButton
+
                             android:id="@+id/btnfeed"
-                            android:layout_width="85dp"
+                            android:layout_weight="2"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:src="@drawable/ss10m" />
                     </LinearLayout>
@@ -249,23 +263,25 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_weight="2"
                             android:layout_height="wrap_content"
                             android:src="@drawable/ss9m" />
 
                         <TextView
-                            android:layout_width="228dp"
+                            android:layout_width="match_parent"
                             android:layout_height="45dp"
+                            android:layout_weight="1"
                             android:layout_gravity="center_horizontal|center_vertical"
                             android:text="Logout"
                             android:textColor="@color/black"
-                            android:textSize="24sp"
-                            android:textStyle="bold" />
+                            android:textSize="24sp" />
 
                         <ImageButton
                             android:id="@+id/btnlogo"
-                            android:layout_width="79dp"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_weight="2"
                             android:src="@drawable/ss10m" />
                     </LinearLayout>
 

@@ -23,7 +23,7 @@ import com.example.happycustomers.HappycustAdapter
 
 
 class RentalsFragment : Fragment() {
-    val sampleImage = intArrayOf(R.drawable.sscar1, R.drawable.sscar2, R.drawable.sscar3, R.drawable.sscar4)
+    val sampleImage = intArrayOf( R.drawable.sscar2, R.drawable.sscar3, R.drawable.sscar4)
     lateinit var binding: FragmentRentalsBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
